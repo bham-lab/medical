@@ -95,7 +95,11 @@ const handleVideoCall = async ()=>{
 useEffect(()=>{
     if(completeData?.success){
         toast.success("Appointment marked as completed");
-        setOpen(false);
+        setTimeOut(() => {
+                    setOpen(false);
+                 
+        }, 0);
+      
     }
 },[completeData])
 
@@ -103,7 +107,10 @@ useEffect(()=>{
 useEffect(()=>{
     if(notesData?.success){
         toast.success("Notes saved successfully!");
-      setAction(null);
+        setTimeout(() => {
+
+            
+      setAction(null);), 0}
     }
 },[notesData])
 
