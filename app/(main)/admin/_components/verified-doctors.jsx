@@ -58,7 +58,10 @@ const handleStatusChange = async (doctor) => {
 useEffect(()=>{
     if(data?.success && targetDoctor) {
         toast.success(`Suspended ${targetDoctor.name} successfully!`);
-        setTargetDoctor(null)
+      setTimeout(() => {
+       setTargetDoctor(null); // or whichever state you are resetting
+    }, 0);
+      
     }
 },[data])
 
