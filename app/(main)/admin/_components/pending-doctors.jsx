@@ -52,7 +52,9 @@ const handelCloseModal = () =>{
   
  useEffect(()=>{
     if (data && data?.success){
-        handelCloseModal();
+       setTimeout(() => {
+      handelCloseModal();
+    }, 0);
     }
 
  },[data])
