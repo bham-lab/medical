@@ -44,7 +44,12 @@ const PendingDoctors =({ doctors })=>{
          formData.append("status",status);
  await submitStatusUpdate(formData);
  }
+const handelCloseModal = () =>{
+    setSElectedDoctors(null);
+}
 
+
+  
  useEffect(()=>{
     if (data && data?.success){
         handelCloseModal();
@@ -54,9 +59,6 @@ const PendingDoctors =({ doctors })=>{
 
 const handViewDetails = (doctor) =>{
     setSElectedDoctors(doctor);
-}
-const handelCloseModal = () =>{
-    setSElectedDoctors(null);
 }
 
 
