@@ -85,7 +85,10 @@ const createLocalDataTimeForm = (timeStr) => {
 
  useEffect(()=>{
   if(data && data?.success) {
-    setShowForm(false);
+   
+    setTimeout(() => {
+     setShowForm(false);
+    }, 0);
     toast.success("Availability slot updated successfully")
   }
 
