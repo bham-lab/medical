@@ -152,7 +152,8 @@ const handleCancelAppointment = async ()=>{
 useEffect(()=>{
     if(cancleData?.success){
         toast.success("Appointment cancelled successfully!");
-      setOpen(false);
+        setTimeout(() => {
+      setOpen(false); }, 0)
     }
 },[cancleData])
 
