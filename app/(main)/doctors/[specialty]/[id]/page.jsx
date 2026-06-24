@@ -13,7 +13,9 @@ const DoctorProfilePage = async ({ params }) =>{
                 getDoctorsById(id),
                 getAvailabletimeSlots(id)
             ]);
-
+if (!doctorData || !slotData) {
+  return <div>Loading doctor profile...</div>; // or a redirect/error message
+}
       
             return(
              <div>
