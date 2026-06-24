@@ -110,7 +110,7 @@ useEffect(()=>{
         setTimeout(() => {
 
             
-      setAction(null);), 0}
+      setAction(null);}, 0)
     }
 },[notesData])
 
