@@ -1,8 +1,9 @@
-import { getCurrentUser } from "@/actions/onboarding"
-import { getPatientAppointments } from "@/actions/patient";
-import AppointmentCard from "@/components/appointment-card";
-import { Card, CardContent } from "@/components/ui/card";
-import PageHeader from "@/components/ui/page-header";
+import { getCurrentUser } from "../../../actions/onboarding"
+import { getPatientAppointments } from "../../../actions/patient";
+import AppointmentCard from "../../../components/appointment-card";
+import { Card, CardContent } from "../../../components/ui/card";
+import PageHeader from "../../../components/ui/page-header";
+
 import { Calendar } from "lucide-react";
 import { redirect } from "next/navigation";
 
